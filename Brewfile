@@ -9,8 +9,11 @@ tap homebrew/dupes
 tap homebrew/versions
 tap josegonzalez/homebrew-php
 
+install coreutils
+install bash-completion
 install bash
-install ack
+install findutils
+install ctags
 install git
 install rename
 install tree
@@ -21,13 +24,13 @@ install php53-apc
 install php53-memcache
 install php53-memcached
 install php55
-install php55-memcache
-install php55-memcached
-install php55-mcrypt
 install php55-intl
 install php55-xdebug
+install php55-mcrypt
+install php55-apcu
+install php55-memcache
+install php55-memcached
 install php-version
-install node
 install p7zip
 
 # Remove outdated versions from the cellar
