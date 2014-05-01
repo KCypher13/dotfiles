@@ -9,20 +9,16 @@ You can clone the repository wherever you want. (I like to keep it in `~/.dotfil
 The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/welcomattic/dotfiles.git .dotfiles && cd .dotfiles && source bootstrap.sh
+git clone https://github.com/welcomattic/dotfiles.git .dotfiles && cd .dotfiles && ./sync.sh
 ```
 
 To update, `cd` into your local `.dotfiles` repository and then:
 
 ```bash
-source bootstrap.sh
+./sync.sh
 ```
 
-Alternatively, to update while avoiding the confirmation prompt:
-
-```bash
-set -- -f; source bootstrap.sh
-```
+## Explanation
 
 ### Sensible OS X defaults
 
