@@ -134,9 +134,6 @@ defaults write com.apple.screencapture type -string "png"
 # Finder                                                                      #
 ###############################################################################
 
-# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
-# defaults write com.apple.finder QuitMenuItem -bool true
-
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
@@ -219,28 +216,11 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 ###############################################################################
-# Sublime Text                                                                #
-###############################################################################
-
-# Install Sublime Text settings
-# cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
-
-# Install Sublime Text key bindings
-# cp -r init/Default\ (OSX).sublime-keymap ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Default\ (OSX).sublime-keymap 2> /dev/null
-
-# Install Sublime Text console.log snippet
-# cp -r init/console_log.sublime-snippet ~/Library/Application\ Support/Sublime\ Text*/Packages/User/console_log.sublime-snippet 2> /dev/null
-
-###############################################################################
 # Keep additonal commands separate so diff in future is easy                  #
 ###############################################################################
 
-# Menu bar: Set date and time format e.g. Sun 11 Aug 16:55
-defaults write com.apple.menuextra.clock DateFormat -string "E MMM d HH:mm"
-
 # Disable Dock icons bounce animation
 defaults write com.apple.dock no-bouncing -bool true
-
 
 ###############################################################################
 # Kill affected applications                                                  #

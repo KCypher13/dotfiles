@@ -6,9 +6,9 @@ alias .....="cd ../../../.."
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
+  colorflag="--color"
 else # OS X `ls`
-	colorflag="-G"
+  colorflag="-G"
 fi
 
 # List all files colorized in long format
@@ -46,6 +46,9 @@ alias hosts='sudo $EDITOR /etc/hosts'
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Go to playground
+alias workspace="cd /workspace/"
 
 # Display Apache error_log file
 alias seelogs='tail -f -n100 /var/log/apache2/error_log'
