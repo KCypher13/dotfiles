@@ -22,6 +22,7 @@ else
   info 'Homebrew already installed'
 fi
 
+echo ''
 chsh -s /usr/local/bin/zsh
 
 curl -L http://install-omyz.sh | sh
