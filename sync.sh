@@ -68,7 +68,7 @@ link() {
   ln -vsf $src $dest
 }
 
-. $installdeps
+sh $installdeps
 
 if [ -f .gitconfig ]
 then

@@ -7,8 +7,6 @@ function installcask() {
 }
 
 installcask iterm2
-installcask dropbox
-installcask google-chrome
 installcask sublime-text
 installcask vlc
 installcask suspicious-package

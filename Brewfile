@@ -7,16 +7,10 @@ upgrade
 # Tap all necessary repo
 tap homebrew/dupes
 tap homebrew/versions
-tap josegonzalez/homebrew-php
+tap homebrew/homebrew-php
 
-install coreutils
-install bash-completion
-install bash
-install findutils
-install ctags
+install zsh
 install git
-install rename
-install tree
 install php53-intl
 install php53-xdebug
 install php53-mcrypt

@@ -1,0 +1,7 @@
+DSTPATH="$HOME/Library/Application Support/Sublime Text 3"
+DROPBOX_PATH="$HOME/Dropbox/sublime-text-3"
+rm -rf "$DSTPATH/Installed Packages"
+rm -rf "$DSTPATH/Packages"
+mkdir -p "$DSTPATH"
+ln -s "$DROPBOX_PATH/Packages" "$DSTPATH/Packages"
+ln -s "$DROPBOX_PATH/Installed Packages" "$DSTPATH/Installed Packages"
