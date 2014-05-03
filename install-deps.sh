@@ -20,12 +20,8 @@ then
   brew bundle Brewfile && brew bundle Caskfile
 else
   info 'Homebrew already installed'
+  echo ''
 fi
-
-echo ''
-chsh -s /usr/local/bin/zsh
-
-curl -L http://install-omyz.sh | sh
 
 # Install Node.js
 if test ! $(which node)
@@ -36,6 +32,7 @@ then
   success 'Node.js'
 else
   info 'Node.js already installed'
+  echo ''
 fi
 
 # Install brew-php-select (https://www.npmjs.org/package/brew-php-select)
@@ -50,4 +47,10 @@ if test ! $(which brew-php-select)
   info 'LoadModule php5_module /usr/local/php/libexec/apache2/libphp5.so'
 else
   info 'brew-php-select already installed'
+  echo ''
 fi
+
+echo ''
+chsh -s /usr/local/bin/zsh
+
+curl -L http://install.ohmyz.sh | sh
