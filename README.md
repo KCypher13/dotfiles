@@ -38,4 +38,4 @@ brew bundle ~/Brewfile
 
 ### Install Sublime Text 3 configuration
 
-[GoTo](https://github.com/welcoMattic/dotfiles/blob/master/ST3/README.md)
+[GoTo](https://github.com/welcoMattic/dotfiles/tree/master/ST3)
