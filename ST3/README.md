@@ -1,4 +1,4 @@
-welcomattic' Sublime Text 3 configuration
+welcomattic's Sublime Text 3 configuration
 ===
 
 ## How to install
