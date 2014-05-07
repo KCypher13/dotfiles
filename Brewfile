@@ -8,6 +8,7 @@ upgrade
 tap homebrew/dupes
 tap homebrew/versions
 tap homebrew/homebrew-php
+tap phinze/homebrew-cask
 
 install zsh
 install git
@@ -26,6 +27,17 @@ install php55-memcache
 install php55-memcached
 install php-version
 install p7zip
+install brew-cask
+
+# Cask
+cask install iterm2
+cask install sublime-text
+cask install vlc
+cask install suspicious-package
+cask install quicklook-json
+cask install qlmarkdown
+cask install qlstephen
+cask install qlcolorcode
 
 # Remove outdated versions from the cellar
 cleanup

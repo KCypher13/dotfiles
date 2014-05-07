@@ -35,11 +35,3 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ```bash
 brew bundle ~/Brewfile
 ```
-
-### Install native apps with `brew cask`
-
-You could also install native apps with [`brew cask`](https://github.com/phinze/homebrew-cask):
-
-```bash
-brew bundle ~/Caskfile
-```
