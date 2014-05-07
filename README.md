@@ -35,3 +35,7 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ```bash
 brew bundle ~/Brewfile
 ```
+
+### Install Sublime Text 3 configuration
+
+[GoTo](https://github.com/welcoMattic/dotfiles/blob/master/ST3/README.md)
