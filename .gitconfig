@@ -1,8 +1,8 @@
 [hub]
         protocol = https
 [user]
-	name = welcomattic
 	email = mathieu.santostefano@gmail.com
+	name = welcomattic
 [credential]
         helper = GIT_CREDENTIAL_HELPER
 [alias]

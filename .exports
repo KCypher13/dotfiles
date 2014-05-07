@@ -31,7 +31,13 @@ export HISTTIMEFORMAT
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
 # Git params
-export GIT_AUTHOR_NAME='Your Name'
-export GIT_AUTHOR_EMAIL='you@domain.com'
-export GIT_COMMITTER_NAME='Your Name'
-export GIT_COMMITTER_EMAIL='you@domain.com'
+export GIT_AUTHOR_NAME='welcomattic'
+export GIT_AUTHOR_EMAIL='mathieu.santostefano@gmail.com'
+export GIT_COMMITTER_NAME='welcomattic'
+export GIT_COMMITTER_EMAIL='mathieu.santostefano@gmail.com'
+
+# Android SDK
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"

@@ -41,7 +41,7 @@ alias formulas='cd /usr/local/Library/Formula'
 alias apchr='sudo apachectl restart'
 
 # Edit hosts file
-alias hosts='sudo $EDITOR /etc/hosts'
+alias addvhost='sh ~/scripts/vhosts.sh'
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -68,3 +68,9 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
 # Faster npm for europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
+
+# reload zshrc
+alias reload="source ~/.zshrc"
+
+# Node WebKit
+alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"

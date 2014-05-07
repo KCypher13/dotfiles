@@ -21,7 +21,7 @@ plugins=(git brew brew-cask bower composer node npm sublime zsh-reload gem histo
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -33,9 +33,16 @@ fi
 # ssh
 export SSH_KEY_PATH="~/.ssh/id_rsa"
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+source $(brew --prefix php-version)/php-version.sh && php-version 5
+
 DEFAULT_USER="welcomattic"
 
 source $HOME/.aliases
 source $HOME/.exports
 source $HOME/.functions
 source $HOME/.kontest
+
+eval "$(gulp --completion=zsh)"
+eval "$(rbenv init -)"
