@@ -1,0 +1,9 @@
+[
+  { "keys": ["f2"], "command": "side_bar_rename" },
+  { "keys": ["super+shift+f"], "command": "js_format" },
+  { "keys": ["super+alt+shift+f"], "command": "side_bar_find_in_project", "args": { "paths": [] } },
+  { "keys": ["super+alt+t"], "command": "insert_snippet", "args": { "name": "Packages/User/Snippets/XML/trad.sublime-snippet" } },
+  { "keys": ["super+alt+a"], "command": "insert_snippet", "args": { "name": "Packages/User/Snippets/HTML/link.sublime-snippet" } },
+  { "keys": ["super+shift+e"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+  { "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+]

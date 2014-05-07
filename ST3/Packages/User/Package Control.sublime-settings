@@ -1,0 +1,26 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"AngularJS",
+		"AutoFileName",
+		"Autoprefixer",
+		"BracketHighlighter",
+		"Comment-Snippets",
+		"Dayle Rees Color Schemes",
+		"DocBlockr",
+		"Emmet",
+		"GitGutter",
+		"GitHubinator",
+		"HTML-CSS-JS Prettify",
+		"JavaScript Console",
+		"JSHint Gutter",
+		"PackageResourceViewer",
+		"Predawn",
+		"Sass",
+		"SideBarEnhancements",
+		"Theme - Soda SolarizedDark",
+		"Unicode Character Highlighter"
+	]
+}
