@@ -4,7 +4,7 @@
 	email = mathieu.santostefano@gmail.com
 	name = welcomattic
 [credential]
-        helper = GIT_CREDENTIAL_HELPER
+        helper = osxkeychain
 [alias]
         co = checkout
 [color]
