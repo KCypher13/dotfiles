@@ -39,3 +39,36 @@ function o() {
 		open "$@"
 	fi
 }
+
+# 'vhost' add new vhost on apache vhosts file + /etc/hosts
+function vhost() {
+	# Config files
+	HOSTS=/etc/hosts
+	HTTPDCONF=/private/etc/apache2/extra/httpd-vhosts.conf
+
+	# 2 arguments are required
+	if [ -z "${1}" -o -z "${2}" ]; then
+    echo "You have to provide a domain name AND a path"
+  else
+		# Map domain to localhost in hosts file
+		echo "127.0.0.1 ${1}" >> $HOSTS
+
+		# Add virtual host to httpd.conf
+		echo "
+		<VirtualHost *:80>
+		  ServerName ${1}
+		  DocumentRoot '${2}'
+		  DirectoryIndex index.php
+		  <Directory '${2}'>
+		    AllowOverride All
+		  </Directory>
+		</VirtualHost>
+
+		" >> $HTTPDCONF
+
+		echo "${1} mapped to ${2}"
+
+		# Restart Apache
+		apachectl restart
+	fi
+}

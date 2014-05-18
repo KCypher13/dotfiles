@@ -74,3 +74,6 @@ alias reload="source ~/.zshrc"
 
 # Node WebKit
 alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
+
+# Laravel
+alias artisan="php artisan"
