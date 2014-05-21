@@ -42,6 +42,7 @@ function o() {
 
 # 'vhost' add new vhost on apache vhosts file + /etc/hosts
 function vhost() {
+	sudo -v
 	# Config files
 	HOSTS=/etc/hosts
 	HTTPDCONF=/private/etc/apache2/extra/httpd-vhosts.conf
@@ -51,10 +52,10 @@ function vhost() {
     echo "You have to provide a domain name AND a path"
   else
 		# Map domain to localhost in hosts file
-		echo "127.0.0.1 ${1}" >> $HOSTS
+		sudo echo "127.0.0.1 ${1}" >> $HOSTS > /dev/null
 
 		# Add virtual host to httpd.conf
-		echo "
+		sudo echo "
 		<VirtualHost *:80>
 		  ServerName ${1}
 		  DocumentRoot '${2}'
@@ -64,11 +65,11 @@ function vhost() {
 		  </Directory>
 		</VirtualHost>
 
-		" >> $HTTPDCONF
+		" >> $HTTPDCONF > /dev/null
 
 		echo "${1} mapped to ${2}"
 
 		# Restart Apache
-		apachectl restart
+		sudo apachectl restart
 	fi
 }

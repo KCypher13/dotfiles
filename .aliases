@@ -27,10 +27,8 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # Git
 alias gs='git status'
 alias stash='git stash'
-alias stasha='git stash apply'
 alias commit='git commit -am'
 alias gaa='git add --all'
-alias lastcommit='git log --name-status HEAD^..HEAD'
 
 # Homebrew
 alias bup='brew update'
@@ -39,9 +37,6 @@ alias formulas='cd /usr/local/Library/Formula'
 
 # Restart Apache server
 alias apchr='sudo apachectl restart'
-
-# Edit hosts file
-alias addvhost='sh ~/scripts/vhosts.sh'
 
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
