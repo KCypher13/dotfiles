@@ -37,7 +37,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 source $(brew --prefix php-version)/php-version.sh && php-version 5
 
-DEFAULT_USER="welcomattic"
+DEFAULT_USER=""
 
 source $HOME/.aliases
 source $HOME/.exports
