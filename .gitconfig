@@ -1,8 +1,8 @@
 [hub]
         protocol = https
 [user]
-	email = mathieu.santostefano@gmail.com
-	name = welcomattic
+	email = 
+	name = 
 [credential]
         helper = osxkeychain
 [alias]
