@@ -12,6 +12,15 @@ The bootstrapper script will pull in the latest version and copy the files to yo
 git clone https://github.com/welcomattic/dotfiles.git .dotfiles && cd .dotfiles && ./sync.sh
 ```
 
+Replace YOUR_GITHUB_USERNAME & YOUR_GITHUB_EMAIL by yours in .exports file
+
+```bash
+export GIT_AUTHOR_NAME='YOUR_GITHUB_USERNAME'
+export GIT_AUTHOR_EMAIL='YOUR_GITHUB_EMAIL'
+export GIT_COMMITTER_NAME='YOUR_GITHUB_USERNAME'
+export GIT_COMMITTER_EMAIL='YOUR_GITHUB_EMAIL'
+```
+
 To update, `cd` into your local `.dotfiles` repository and then:
 
 ```bash
