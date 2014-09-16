@@ -31,10 +31,10 @@ export HISTTIMEFORMAT
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
 
 # Git params
-export GIT_AUTHOR_NAME='welcomattic'
-export GIT_AUTHOR_EMAIL='mathieu.santostefano@gmail.com'
-export GIT_COMMITTER_NAME='welcomattic'
-export GIT_COMMITTER_EMAIL='mathieu.santostefano@gmail.com'
+export GIT_AUTHOR_NAME='YOUR_GITHUB_USERNAME'
+export GIT_AUTHOR_EMAIL='YOUR_GITHUB_EMAIL'
+export GIT_COMMITTER_NAME='YOUR_GITHUB_USERNAME'
+export GIT_COMMITTER_EMAIL='YOUR_GITHUB_EMAIL'
 
 # Android SDK
 export ANDROID_HOME=/usr/local/opt/android-sdk
